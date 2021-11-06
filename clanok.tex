@@ -1,21 +1,17 @@
-% Metódy inžinierskej práce
-
-\documentclass[10pt,twoside,slovak,a4paper]{article}
-
+\documentclass[10pt,oneside,slovak,a4paper]{article}
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[IL2]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{url}
+\usepackage{hyperref} 
 
 \usepackage{cite}
 %\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Autodesk Maya\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Ing. Fedor Lehocki, PhD.}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Autodesk Maya\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Ing. Fedor Lehocki, PhD.}}
 
 \author{Hieu Le Minh\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -23,7 +19,7 @@
 	{\small \texttt{xleminhh@stuba.sk}}
 	}
 
-\date{\small 25. október 2021} % upravte
+\date{\small 5. november 2021}
 
 
 
@@ -44,14 +40,15 @@ na animácie.
 
 \section{Úvod}
 
-V tomto článku sa budeme zaoberať programom Autodesk Maya. Vysvetlím Vám, čo to je za program a potom Vám bližšie tento program opíšem v ďaľších častiach
-t.j. napríklad : vytváranie reálneho vlasu, zostavenie svalov, vytvranie hier a programov pomocou unity 3D a Maya atď.
+Nikto nie je príliš starý na rozprávky a hry. Ešte doteraz si rád pozriem nejakú tú rozprávku, zahrám nejaké tie hry, ale už je to inšie. V poslednej dobe si častejšie všímam a uvažujem nad tým, ako dlho muselo trvať, čo sa muselo použiť na spracovanie takejto rozprávky, filmu alebo hry. Preto som si vybral rámcovú tému Autodesk Maya. Zaujalo ma, ako je možné vytvárať také animácie aké existujú a tu som našiel moju odpoveď.
 
 Tu je explicitná štruktúra článku.
-Autodesk Maya program je vysvetlený v tejto časti.~\ref{AM}.
-použitie programu je v tejto časti.~\ref{pouzitie}.
+Autodesk Maya softvér je vysvetlený v tejto časti.~\ref{AM}.
+Vysvetlenie MEL a Python.~\ref{python}.
+Výhody a nevýhody používania tohto programu sa nachádza tu.~\ref{vyhnevyh}.
+Porovnanie Maya a Blender.~\ref{porovnanie}.
+Použitie Unity 3D a Maya.~\ref{3d}.
 Záverečné poznámky prináša časť~\ref{zaver}.
-
 
 
 \section{Autodesk Maya - čo to je?} \label{AM}
@@ -72,15 +69,15 @@ Autodesk Maya je dostupný pre operačné systémy Windows, Mac a Linux. Na 1 ro
 \end{figure*}
 
 
+\section{Iná časť} \label{ina}
 
-\section{Použitie Autodesk Maya} \label{pouzitie}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{pouzitie:vlas}), a potom na ešte nejaké (časť~\ref{pouzitie:sval})(časť~\ref{pouzitie:unity}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
 Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
 
-\subsection{vytváranie reálneho vlasu} \label{pouzitie:vlas}
+
+\section{vytváranie reálneho vlasu} \label{pouzitie}
 
 tu bude clanok
 
@@ -107,6 +104,14 @@ A Gaming Environment to Train Teachers Diagnose Children Learning Disabilities
 	%\end{enumerate}
 \end{enumerate}
 
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
@@ -116,6 +121,6 @@ A Gaming Environment to Train Teachers Diagnose Children Learning Disabilities
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
+\bibliography{literatura.bib}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
