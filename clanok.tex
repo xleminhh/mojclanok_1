@@ -3,15 +3,13 @@
 \usepackage[IL2]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url}
+\usepackage{url} 
 \usepackage{hyperref} 
-
 \usepackage{cite}
-%\usepackage{times}
 
-\pagestyle{headings}
 
-\title{Autodesk Maya\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Ing. Fedor Lehocki, PhD.}}
+
+\title{Načo je Autodesk Maya?\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2020/21, vedenie: Ing. Fedor Lehocki, PhD.}}
 
 \author{Hieu Le Minh\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -29,18 +27,17 @@
 
 \begin{abstract}
 Ja som si vybral na rámcovú tému modelovanie v softvérovom inžinierstve program Autodesk Maya
-- je to program využívaný na vytváranie 3d animácií. 
+- je to program využívaný na vytváranie 3D animácií. 
 Plánujem sa hlavne zamerať na opis tohto programu, ako funguje, kde sa používa, v akom 
 programovacom jazyku sa píše a tak ďalej. Rád by som ešte spomenul výhody a nevýhody, či 
-sa tento program oplatí používať a na to by som potom nadviazal porovnanie s inými populárnymi programami
-na animácie.
+sa tento program oplatí používať a na to by som potom nadviazal porovnanie s inými populárnymi programami na animácie.
 \end{abstract}
 
 
 
 \section{Úvod}
 
-Hovorí sa, že nikto nie je príliš starý na rozprávky a hry. Ešte doteraz si rád pozriem nejakú tú rozprávku alebo zahrám hry. V poslednej dobe niekedy uvažujem pri tom čo pozerám ako dlho muselo trvať spracovanie alebo čo sa muselo použiť na spracovanie takéhoto niečoho. Preto som si vybral rámcovú tému Autodesk Maya. Celkom ma zaujalo, ako je možné vytvárať niektoré animácie pomocou tohto softvéru, tak som sa vydal na cestu hľadania odpovdí a rozhodol som sa ich s Vami zdieľať.
+Hovorí sa, že nikto nie je príliš starý na rozprávky a hry. Ešte doteraz si rád pozriem nejakú tú rozprávku alebo zahrám hry. V poslednej dobe niekedy uvažujem pri tom čo pozerám ako dlho muselo trvať spracovanie alebo čo sa muselo použiť na spracovanie takéhoto niečoho. Preto som si vybral rámcovú tému Autodesk Maya. Celkom ma zaujalo, ako je možné vytvárať niektoré animácie pomocou tohto softvéru, tak som sa vydal na cestu hľadania odpovedí a rozhodol som sa ich s Vami zdieľať.
 
 Tu je explicitná štruktúra článku.
 Autodesk Maya softvér je vysvetlený v tejto časti.~\ref{AM}.
@@ -52,7 +49,7 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
-\section{Autodesk Maya - čo to je?} \label{AM}
+\section{Autodesk Maya - čo to vôbec je?} \label{AM}
 
 Autodesk Maya je program, ktorý umožňuje 3D animovanie, modelovanie, simulácie, vykresľovanie a ďalšie. Je všestranný a mnohí ho považujú za priemyselný štandard pre animácie. Veľa známych filmových štúdií používa Autodesk Maya ako sú napríklad Blue Sky Studios, Framestore, Moving Picture Company. Tento softvér bol použitý na animovanie známych a ocenených filmových rozprávok ako sú „Frozen“ a „Wreck It Ralph“.\\
 
@@ -68,7 +65,7 @@ celým názvom Maya Embedded Language je skriptový jazyk. Funkcie ako menu, but
 \paragraph{Python}
 patrí do rebríčka jedných z najpopulárnejších a najobľúbenejších programovacích jazykov. Používa sa napríklad na výrobu rôznych hier, programov a aj na umelú inteligenciu.\\
 
-Prečo som tu spomenul python? MEL je hlavný jazyk programu Autodesk Maya, ale tento program taktiež podporuje písanie v pythone. Výhoda v používaní pythonu je tá, že python narozdiel od MEL má možnosť class managementu, taktiež je štruktúra kódu ľahšie čítateľná a porozumiteľná. MEL má iba funkcie, ktoré súvisia s Mayou narozdiel od pythonu, ktorý je široko podporovaný rôznymi softvérami.\cite{evaluationmaya}
+Prečo som tu spomenul python? MEL je hlavný jazyk programu Autodesk Maya, ale tento program taktiež podporuje písanie v pythone. Výhoda v používaní pythonu je tá, že python narozdiel od MEL má možnosť class managementu, taktiež je štruktúra kódu ľahšie čítateľná a zrozumiteľná. MEL má iba funkcie, ktoré súvisia s Mayou narozdiel od pythonu, ktorý je široko podporovaný rôznymi softvérami.\cite{evaluationmaya}
 
 
 
@@ -78,7 +75,7 @@ Tu by som rád spomenul niektoré výhody a nevýhody tohto softvéru.
 \paragraph{Výhody}
 \begin{itemize}
 \item umožňuje používateľom pracovať rýchlejšie a efektívnejšie
-\item dokončená práca môže byť rýchlejšie skontrolovaná 
+\item dokončená práca sa dá rýchlejšie kontrolovať\cite{educbaa2021}
 \item poskytuje veľa funkcií
 \item vytvára dobré rendre
 \end{itemize}
@@ -91,11 +88,9 @@ Tu by som rád spomenul niektoré výhody a nevýhody tohto softvéru.
 \item drahé
 \end{itemize}
 
-
-
 \section{Porovnanie Maya a Blender} \label{porovnanie}
 
-Vybral som na porovnanie Blender, pretože tieto 2 softvéri sú navonok veľmi podobné. V nasledujúcich bodoch si dovolím Vám ukázať, čo majú spoločné a čo rozdielne.
+Vybral som na porovnanie Blender, pretože tieto 2 softvéri sú navonok veľmi podobné. Dovolím si Vám v nasledujúcich bodoch ukázať, čo majú spoločné a čo rozdielne.
 
 \begin{itemize}
 \item spoločné
@@ -109,7 +104,7 @@ Vybral som na porovnanie Blender, pretože tieto 2 softvéri sú navonok veľmi 
 	\item ako som už v úvode spomínal, za použivanie Maya musíte platiť, zatial čo Blender je zadarmo, lebo je open-source
 	\item Maya je viac komplikovaná na používanie ako Blender (pre začiatočníkov)
 	\item Maya je určená skôr väčším firmám, Blender je zas skôr určený pre start-upy alebo začiatočníkom
-	\item za používanie Maya sa platí, takže je silenejšia ako Blender a má menej bugov\cite{educba2021}
+	\item za používanie Maya sa platí, takže je výkonnejšia ako Blender a má menej bugov\cite{educba2021}
 	\end{itemize}
 \end{itemize}
 
@@ -119,18 +114,19 @@ Vybral som na porovnanie Blender, pretože tieto 2 softvéri sú navonok veľmi 
 
 Na to aby sme mohli pokračovať v tejto téme, tak Vám najprv vysvetlím čo je Unity 3D.\\
 
-\emph{Unity 3D} je softvér, ktorý poháňa celý program, je to niečo ako motor. Jeden z naoblúbenejších softvérov na trhu. Je jednoduchý na používanie a nemusíte za to nič platiť. Oblúbený, pretože umožňuje programátorom písať v C? alebo JavaScript. Taktiež má vbudovaný Visual Studio, čiže kód bude prehľadný a ľahšie čítateľný. Ponúka Vám aj nástroje na animácie, aby ste mohli vytvárať Vaše nie len 3D animácie, ale aj 2D.\\
+\emph{Unity 3D} je softvér, ktorý poháňa celý program, je to niečo ako motor. Jeden z naoblúbenejších softvérov na trhu. Je jednoduchý na používanie a nemusíte za to nič platiť. Oblúbený, pretože umožňuje programátorom písať v C alebo JavaScript. Taktiež má vbudovaný Visual Studio, čiže kód bude prehľadný a ľahšie čítateľný. Ponúka Vám aj nástroje na animácie, aby ste mohli vytvárať Vaše nie len 3D animácie, ale aj 2D.\\
 
 Prečo Unity 3D a Maya? Dôvodom je, že Unity 3D chýba modelovacie schopnosti a v tomto to Maya dopĺňa.\cite{labschutz2011content}\\
 
-Keďže počet prípadov, kde deti s ADHD (porucha pozornosti s hyperaktivitou), dislexiou, disgrafiou a ďaľšími neschopnosťami narastá, vytvorila sa aplikácia pomocou Maya a Unity, ktorá sa volá "Learning Disability Application". Z názvu je už jasné, že sa to bude zaoberať nejakými neschopnosťami alebo postihnutiami. Je to hra/aplikácia určená pre učiteľov, ktorí sa môžu otestovať a dokonca aj naučiť ako sa zachovať a čo robiť , ak búdu učiť takého žiaka. Hra ich prevedie reálnymi situáciami, ktoré môžu nastať a nakonci sú učitelia evaluovaný buď "right decision" (správna voľba) alebo "wrong decision" (nesprávna voľba)\cite{studies}.
+Príklad:
+Keďže počet prípadov, kde deti s ADHD (porucha pozornosti s hyperaktivitou), dislexiou, disgrafiou a ďaľšími neschopnosťami narastá, vytvorila sa aplikácia pomocou Maya a Unity, ktorá sa volá "Learning Disability Application". Z názvu je už jasné, že sa to bude zaoberať nejakými neschopnosťami alebo postihnutiami. Je to hra/aplikácia určená pre učiteľov, ktorí sa môžu otestovať a dokonca aj naučiť ako sa zachovať a čo robiť, ak búdu mať takého študenta. Hra ich prevedie reálnymi situáciami, ktoré môžu nastať a nakonci sú učitelia evaluovaný buď "right decision" (správna voľba) alebo "wrong decision" (nesprávna voľba)\cite{studies}.
 
 
 
 \section{Záver} \label{zaver}
 
-
+V tomto článku som sa snažil Vás oboznámiť so základnými informáciami o Autodesk Maya. Prešli sme od témy kde som Vám vysvetloval čo to je Autodesk Maya až po vytvorenie aplikácie pomocou nej. Tento softvér je hlavne určený pre animátorov a dizajnérov. Ako som už spomínal, neradím Vám použivať tento softvér ak ste nováčik v tomto odbore, kvôli náročnosti a taktiež aby ste nemiňali len tak Vaše peniaze, lebo Maya nie je zadarmo. Je to veľmi dobrý softvér, ktorý si veľa používateľov pochvaľuje. 
 
 \bibliography{literatura.bib}
-\bibliographystyle{plain}
+\bibliographystyle{plain} 
 \end{document}
