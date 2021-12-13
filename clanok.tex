@@ -7,7 +7,7 @@
 \usepackage{hyperref} 
 \usepackage{cite}
 \usepackage{float}
-
+\restylefloat{table}
 
 
 \title{Načo je Autodesk Maya?\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2020/21, vedenie: Ing. Fedor Lehocki, PhD.}}
@@ -28,10 +28,10 @@
 
 \begin{abstract}
 21. storočie, inak nazývané doba technológií. Keďže technológie okolo nás sú už natoľko rozvinuté, že môžeme napríklad pomocou umelej inteligencie ovládať všetky spotrebiče v domácnosti,
-rozhodol som sa napísať článok na tému, presnejšie na program, o ktorom sa nie veľmi rozpráva v spoločnosti, aj keď veľká časť ľudí o jeho produkty pozná. Je to softvér Autodesk Maya.
+rozhodol som sa napísať článok na tému, presnejšie na program, o ktorom sa nie veľmi rozpráva v spoločnosti, aj keď veľká časť ľudí o jeho produkty pozná, softvér Autodesk Maya.
 V tomto článku si prejdeme opisom tohto programu, ako funguje, kde sa používa, v akom 
 programovacom jazyku sa píše. Taktiež si spomenieme výhody a nevýhody, či 
-sa tento program oplatí používať a na to by sme potom nadviazali na porovnanie s inými populárnymi programami na animácie.
+sa tento program oplatí používať a na to by sme potom nadviazali porovnanie s inými populárnymi programami na animácie.
 \end{abstract}
 
 
@@ -40,15 +40,13 @@ sa tento program oplatí používať a na to by sme potom nadviazali na porovnan
 
 Hovorí sa, že nikto nie je príliš starý na rozprávky a hry. Ešte doteraz si rád pozriem nejakú tú rozprávku alebo zahrám hry. V poslednej dobe niekedy uvažujem pri tom čo pozerám ako dlho muselo trvať spracovanie alebo čo sa muselo použiť na spracovanie takéhoto niečoho. Preto som si vybral rámcovú tému Autodesk Maya. Celkom ma zaujalo, ako je možné vytvárať niektoré animácie pomocou tohto softvéru, tak som sa vydal na cestu hľadania odpovedí a rozhodol som sa ich s Vami zdieľať.
 
-
 Tu je explicitná štruktúra článku.
 Autodesk Maya softvér je vysvetlený v tejto časti.~\ref{AM}.
 Vysvetlenie MEL a Python.~\ref{python}.
 Výhody a nevýhody používania tohto programu sa nachádza tu.~\ref{vyhnevyh}.
 Porovnanie Maya a Blender.~\ref{porovnanie}.
 Použitie Unity 3D a Maya.~\ref{3d}.
-Záverečné poznámky prináša časť.~\ref{zaver}.
-Reakcia na témy.~\ref{reakcia}.
+Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
@@ -58,14 +56,16 @@ Autodesk Maya je program, ktorý umožňuje 3D animovanie, modelovanie, simulác
 
 Pomocou Maya môžete vytvárať 3D prvky pre filmy, seriály a dokonca aj pre videohry. Zahŕňa niekoľko rôznych komponentov umenia vrátane vytvárania 3D modelov, zostavovania postavy, animácií, dynamiky, osvetlenia a vykresľovania. Maya obsahuje ľahko použiteľné nástroje na zjednodušenie všetkých týchto úloh.\\
 
-Autodesk Maya je dostupný pre operačné systémy Windows, Mac a Linux. Na 1 rok Vás bude tento program stáť 1700 dolárov, čo je v prepočte okolo 1500 eúr. Zahrniem Vám sem aj tabuľu, kde sú spísané rôzne softvérin na akom operačnom systém sa dajú používať a ich cenu na rok.~\ref{f:tabulka}
+Autodesk Maya je dostupný pre operačné systémy Windows, Mac a Linux. Na 1 rok Vás bude tento program stáť 1700 dolárov, čo je v prepočte okolo 1500 eúr. Vypíšem Vám sem aj tabuľu, kde sú spísané rôzne softvérin na akom operačnom systém sa dajú používať a ich cenu na rok.~\ref{f:tabulka}
 
-\begin{table*}[tbh]
+\begin{table*}[h]
 \centering
 \caption{tabulka rôznych softvérov}
 \label{f:tabulka}
-\includegraphics[width=7in]{tabulka.pdf}
+\includegraphics[width=4in]{tabulka.pdf}
 \end{table*}
+
+
 
 
 \section{MEL a Python} \label{python}
@@ -145,21 +145,24 @@ Keďže počet prípadov, kde deti s ADHD (porucha pozornosti s hyperaktivitou),
 
 
 
+
 \section{Záver} \label{zaver}
 
-V tomto článku som sa snažil Vás oboznámiť so základnými informáciami o Autodesk Maya. Prešli sme od témy kde som Vám vysvetloval čo to je Autodesk Maya až po vytvorenie aplikácie pomocou nej. Tento softvér je hlavne určený pre animátorov a dizajnérov. Ako som už spomínal, neradím Vám použivať tento softvér ak ste nováčik v tomto odbore, kvôli náročnosti a taktiež aby ste nemiňali len tak Vaše peniaze, lebo Maya nie je zadarmo. Je to veľmi dobrý softvér, ktorý si veľa používateľov pochvaľuje. 
+V tomto článku som sa snažil Vás oboznámiť so základnými informáciami o Autodesk Maya. Prešli sme od témy kde som Vám vysvetloval čo to je Autodesk Maya až po vytvorenie aplikácie pomocou nej. Tento softvér je hlavne určený pre animátorov a dizajnérov. Ako som už spomínal, neradím Vám používať tento softvér ak ste nováčik v tomto odbore, kvôli náročnosti a taktiež aby ste nemíňali zbytočne peniazmi, lebo Maya nie je zadarmo. Inak je to veľmi dobrý softvér, ktorý si veľa používateľov pochvaľuje. 
+
 
 
 \section{Reakcia na témy} \label{reakcia}
 
 
 \paragraph{Historické súvislosti.}
-
+Mali sme prednášku na túto tému čo sa volala Sedem statočných inžinierov. Bolo to zaujímavé, pretože väčšinu z predstavených som nepoznal, takže som sa zase dozvedel niečo nové. Boli tam ale 2 osobnosti, ktoré mi padli do oka. Russell Kirsch a Bill English. Čo som sa zaujímavé dozvedel z prednášky bolo, že English a Douglas Engelbart zostrojili prvú počítačovú myš, čo je podľa mňa veľmi obdivuhodné, keďže v dnešnej dobe toto zariadenia použiva milióny ľudí a Kirsch a jeho tím zostrojili digitálny skener v roku 1957, čo tiež je veľmi obdivuhodné, pretože nemali také nástroje ako my v dnešnej dobe. Niekedy si to mi ľudia neuvedomujeme, ale tieto osobnosti nám v určitej miere uľahčili život týmito výtvormi.
 
 \paragraph{Technológia a ľudia.}
-
+Tejto prednáške som až tak nerozumel. Spomínalo sa hlavne Scrum, ale bol spomenutý aj Agile. Čo som si ale odniesol bolo trocha pochopenia jednotlivých spomenutých významov, že Scrum je nejaká štruktúra, ktorá sa použiva na teamwork a jej úlohou je učiť ľudí na skúsenostiach. Potom bolo definované aj to že Scrum a Agile nie sú rovnaké, kde Scrum sa použiva na neustále zdokonalovanie sa a Agile je mindset. 
 
 \paragraph{Udržateľnosť a etika.}
+Prednáška na túto tému bola pre mňa najzujímavejšia. Veľmi sa mi páčilo ako sa ľudia zapájali a poll bol celkom zaujímavý nápad. Tiež som sa dozvedel z tejto prednášky veľa nového. Najviac ma ale asi zaujalo SWOT, doteraz som nevedel, že niečo také existuje. Používa na analýzu projektu a presne pri tomto mi napadlo, že niečo podobné sa použiva pri pohovoroch(silné a slabé stránky).
 
 
 \bibliography{literatura.bib}
